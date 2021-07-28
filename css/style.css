@@ -10,6 +10,11 @@ h1, h2, h3, h4, h5, h6{
 
 }
 
+/* Image-Coursel */
+.img-fluid {
+    max-width: 100%;
+    height:auto;
+}
 /* Heading */
 
 .big-heading {
@@ -28,7 +33,7 @@ h1, h2, h3, h4, h5, h6{
 
 
 .container-fluid{
-padding: 7% 15%;
+padding: 1% 2%;
 }
 
 
@@ -54,10 +59,6 @@ p{
   padding: 0 18px;
 }
 
-.navigation{
-  margin-left: 900px;
-  position: absolute;
-}
 
 .navbar-brand{
   font-family: "Ubuntu";
@@ -187,26 +188,26 @@ p{
 
 /* Title Section */
 
-
+/*
 #title{
-  background-color: #94B4A4;
+  /* background-color: #94B4A4; */
   color: #fff;
   text-align: center;
-}
+} */
 
 
 #title .container-fluid {
   padding: 3% 15% 7%;
+  text-align: center;
 }
 
-/* Tittle Image */
+
+/*Tittle Image */
 
 .tittle-image{
-  width: 30%;
-  transform:rotate(0deg);
-  /* position: absolute; */
-  margin-left: 50px;
-  right: 30%;
+width: 30%;
+height: 30%;
+position: absolute;
 }
 
 
@@ -215,7 +216,7 @@ p{
 
 
 #features{
-  background-color: #fff;
+  background-color: #fff
   position: relative;
   z-index: 1;
 }
@@ -238,12 +239,14 @@ p{
   color: #ff4C68;
 }
 
+/* features */
+
 
 /* Testimonial */
 
 #testimonial{
-  background-color: #ef8172;
-  color: #fff;
+  /* background-color: #94B4A4; */
+  color: #000;
 }
 
 
@@ -252,11 +255,7 @@ p{
   line-height: 1.5;
 }
 
-.testimonial-img {
-  width: 10%;
-  border-radius: 100%;
-  margin: 20px;
-}
+
 
 
 /* Press */
@@ -317,7 +316,10 @@ p{
   background-color: #183661;
 }
 
-
+.foot{
+  color: #d0cccc;
+  margin-left: 80%;
+}
 
 .social-icon{
   padding: 10px;
