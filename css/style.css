@@ -11,10 +11,10 @@ h1, h2, h3, h4, h5, h6{
 }
 
 /* Image-Coursel */
-.img-fluid {
+/* .img-fluid {
     max-width: 100%;
     height:auto;
-}
+} */
 /* Heading */
 
 .big-heading {
@@ -23,6 +23,7 @@ h1, h2, h3, h4, h5, h6{
   line-height: 1.5;
   font-weight: bold;
 }
+
 
 .section-heading {
   font-size: 3rem;
@@ -60,7 +61,7 @@ p{
 }
 
 
-.navbar-brand{
+#navigation .navbar-brand{
   font-family: "Ubuntu";
   font-size: 2.5rem;
   font-weight: bold;
@@ -90,10 +91,13 @@ p{
 	padding: 0;
 }
 .navbar-brand img{
-	height: 28px;
-	width: auto;
+  border-radius: 100%;
+  height: 100px;
+  width: 100px;
+	/* height: 28px;
+	width: auto; */
 	display: block;
-  filter: brightness(20%);
+  /* filter: brightness(20%); */
 	-webkit-transition : all 0.3s ease-out;
 	transition : all 0.3s ease-out;
 }
@@ -139,7 +143,7 @@ p{
 	border-color: transparent;
 }
 .nav-link{
-	color: #212121 !important;
+	color: #fff !important;
 	font-weight: 500;
     transition: all 200ms linear;
 }
@@ -184,32 +188,34 @@ p{
   margin: 5% 3% 5% 0;
 }
 
-
-
-/* Title Section */
-
-/*
-#title{
-  /* background-color: #94B4A4; */
-  color: #fff;
-  text-align: center;
-} */
-
+.carousel-inner {
+  /* position: relative;
+  overflow: hidden; */
+  height: 42rem;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
 
 #title .container-fluid {
-  padding: 3% 15% 7%;
-  text-align: center;
+  /* position: absolute; */
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  max-width: 960px;
+  padding-bottom: 50px;
+  background-size: cover;
 }
 
 
-/*Tittle Image */
-
-.tittle-image{
-width: 30%;
-height: 30%;
-position: absolute;
+#image {
+  padding-top: 15%;
+  width: 150%;
+  height: 600px;
+  object-fit: contain
+  background-size: contain;
 }
-
 
 
 /* Feature Section */
@@ -239,40 +245,6 @@ position: absolute;
   color: #ff4C68;
 }
 
-/* features */
-
-
-/* Testimonial */
-
-#testimonial{
-  /* background-color: #94B4A4; */
-  color: #000;
-}
-
-
-.testimonial-text {
-  font-size: 3rem;
-  line-height: 1.5;
-}
-
-
-
-
-/* Press */
-
-#press{
-  background-color: #ef8172;
-  text-align: center;
-  padding-bottom: 3%;
-}
-
-
-.press-logo {
-  width: 15%;
-  margin: 20px 20px 50px;
-}
-
-
 /* Pricing Section */
 
 
@@ -290,12 +262,7 @@ position: absolute;
   padding: 3% 2%;
 }
 
-/* CTA Section */
 
-#CTA {
-  background-color: #d0cccc;
-  color: #fff;
-}
 
 
 /* Footer Section */
@@ -318,7 +285,12 @@ position: absolute;
 
 .foot{
   color: #d0cccc;
-  margin-left: 80%;
+  margin-left: 0%;
+}
+
+.address{
+  color: #d0cccc;
+  margin-left: 0;
 }
 
 .social-icon{
@@ -333,14 +305,55 @@ position: absolute;
 
 
 
-@media (max-width:1028px) {
+#laundry {
+  padding-top: 5%;
+}
 
-  #title{
-    text-align: center;
-  }
-  .tittle-image{
-    position: static;
-    transform: rotate(45);
-  }
+#market {
+  padding-top: 5%;
+}
 
+#milk {
+  padding-top: 5%;
+}
+
+@charset "ISO-8859-1";
+
+.snip1559 {
+  font-family: 'Lato', Arial, sans-serif;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 10px;
+  /* min-width: 250px;
+  max-width: 310px; */
+  width: 80%;
+  background-color: #d8e3e7;
+  color: #2B2B2B;
+  text-align: center;
+  font-size: 16px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+margin-left: 150px;
+border-radius: 50px;
+margin-top: 40px;
+margin-bottom: 30px;
+transition: transform .2s;
+
+}
+.snip1559:hover{
+    transform: scale(1.025);
+}
+
+.snip1559 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.snip1559 figcaption {
+  padding: 5% 10% 5%;
+  text-align: left;
+}
+
+h2{
+  text-align: center;
 }
